@@ -1,0 +1,25 @@
+//iife
+ (function(numbers){
+      var add =0;
+     for(var i in numbers){
+        add = add + numbers[i];
+     }
+    console.log(add);
+     
+ })([0,1,2,3,4,5])
+ 
+ 
+ //Anonymous
+ 
+   let numbers = [0,1,2,3,4,5];
+ var sum = function(numbers){
+     var add =0;
+     for(var i in numbers){
+        add = add + numbers[i];
+     }
+    return add;
+ }     
+ 
+ var result = sum(numbers);
+ console.log(result);
+ 
