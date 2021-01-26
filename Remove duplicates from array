@@ -1,0 +1,24 @@
+//Anonymous
+ let array =["apple","bat","pop","bat","apple"];
+
+
+ var removeDuplicates =function(text) {
+     var seen = {};
+     var result = [];
+
+
+for (var i = 0; i < text.length; i++) {
+        var char = text[i];
+
+         if (char in seen) {
+        //   // do nothing
+        } else {
+           seen[char] = true;
+            result += char + ' ';
+        }
+    }
+
+    return result;
+}
+var result = removeDuplicates(array);
+console.log(result);
