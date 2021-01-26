@@ -1,0 +1,30 @@
+//amonymous
+
+ let array1 = [3, 5, 4];
+let array2 = [1, 2, 3];
+
+var median = function(array1,array2){
+
+let sum = 0;
+let sum1 = 0;
+let median;
+
+
+for(var i in array1){
+    
+    sum = sum + array1[i];
+  
+} // console.log(sum);
+    
+for(var j in array2){
+    sum1 = sum1 + array2[j];
+}
+      //console.log(sum1);
+      
+  median = (sum + sum1) / 2;
+  return median;
+      
+}
+
+var result = median (array1,array2);
+console.log(result);
