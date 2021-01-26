@@ -1,0 +1,20 @@
+//iife
+
+ (function(words){
+     let arr = words.join().toUpperCase();
+      console.log(arr);
+ }
+ )( ["apple","bat","cat"])
+ 
+-------------------------------------------------------------------------------- 
+ 
+ // Anonymous
+
+ let words = ["apple","bat","cat"];
+ var capitalWords = function(words){
+     return words.join().toUpperCase();
+ }
+ var result = capitalWords(words);
+ console.log(result);
+ 
+ 
